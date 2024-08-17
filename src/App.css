@@ -1,0 +1,271 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-container {
+  height: 80vh;
+  width: 95vw;
+  max-height: 80vh !important;
+  min-width: 80vw !important;
+}
+
+.property-container {
+  border-radius: 10px;
+  /* background-color: aquamarine; */
+  height: 80vh;
+  width: 95vw;
+}
+
+.property-detail-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.image-container {
+  height: 100%;
+  width: 100%;
+  /* background-color: blue; */
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr auto;
+}
+
+.preview-image {
+  height: 100%;
+  width: 100%;
+  /* background-color: palevioletred; */
+}
+
+.preview-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.img-list {
+  height: 100%;
+  width: 100%;
+  /* background-color: gray; */
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.img-wrapper {
+  /* height: 85px; */
+  cursor: pointer;
+}
+
+.slide-img {
+  height: 95px;
+  width: 135px;
+}
+
+.detail-container {
+  height: 100%;
+  width: 100%;
+  /* background-color: blueviolet; */
+  display: grid;
+  gap: 5px;
+  grid-template-rows: auto 1fr auto;
+}
+
+.modal-body {
+  height: 100%;
+  width: 100%;
+}
+
+.detail-header {
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid #B6B6B6;
+  /* background-color: #B17E01; */
+}
+
+.detail-header .description {
+  text-overflow: ellipsis;
+  color: #9B9B9B;
+  padding-bottom: 5px;
+  /* text-wrap: nowrap; */
+}
+
+.detail-header .title {
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  font-weight: bolder;
+}
+
+
+.detail-body {
+  height: 100%;
+  width: 100%;
+  /* background-color: #B17E01; */
+  display: grid;
+  grid-template-columns: 0.60fr 0.40fr;
+  gap: 10px;
+}
+
+.property-info-container {
+  height: 100%;
+  width: 100%;
+  /* background-color: #b5a785; */
+  display: grid;
+  grid-template-rows: 0.25fr 0.75fr;
+}
+
+.property-info {
+  height: 100%;
+  width: 100%;
+  /* background-color: #B6B6B6; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.bold-details {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* background-color: #B6B6B6; */
+  padding: 5px;
+  border-bottom: 2px solid #B6B6B6;
+}
+
+.small-details {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5px;
+  border-bottom: 2px solid #B6B6B6;
+}
+
+.detail-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 5px;
+}
+
+.property-info .detail-box:nth-child(3n+2) {
+  border-left: 2px solid #B6B6B6;
+  border-right: 2px solid #B6B6B6;
+}
+
+.text-gold {
+  color: #B17E01;
+}
+
+.box-header {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box-subheader {
+  font-size: 10px;
+  color: #9B9B9B;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+
+.map-container {
+  /* background-color: #b5a785; */
+  height: 100%;
+  width: 100%;
+}
+
+.action-container {
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  /* background-color: #B17E01; */
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 0.55fr 0.45fr;
+}
+
+.action-container div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-container div:last-child {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.activeImg {
+  border: 1px solid #B17E01;
+}
+
+.btn-alternate {
+  height: 35px;
+  width: 150px;
+  outline: none;
+  border: 1px solid #B17E01;
+  border-radius: 5px;
+  color: #B17E01;
+  background-color: white;
+}
+
+.btn-normal {
+  height: 35px;
+  width: 250px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-color: #B17E01;
+  color: white;
+}
+
+.ameneties {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ameneties .title {
+  padding: 15px 15px 15px 0px;
+  font-weight: 700;
+}
+
+.ameneties-list {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  color: #9B9B9B;
+}
+
+.ameneties-item {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+  text-overflow: ellipsis;
+  text-emphasis: none;
+  text-wrap: nowrap;
+}
+
+.modal-body-container{
+  position: relative;
+}
+
+.closeicon{
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  cursor: pointer;
+}
